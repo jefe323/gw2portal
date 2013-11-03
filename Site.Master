@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="gw2portal.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Guild Wars 2 Portal</title>
+    <link rel="shortcut icon" href="/Content/favicon.ico" type="image/ico" />
+    <link href="site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="load()">
+    <div id="background">
+        <img runat="server" src="~/Content/bg.jpg" class="stretch" alt="" />
+    </div>    
+    <form id="form1" runat="server">
+        <div class="center">
+            <a runat="server" href="~/"><img runat="server" src="~/Content/site_logo.png" /></a>
+            <ul class="nav">
+            <li class="nav"><a runat="server" href="~/Default.aspx"><img runat="server" src="~/Content/Menu/home.png" /></a></li>
+            <li class="nav"><a runat="server" href="~/News.aspx"><img runat="server" src="~/Content/Menu/news.png" /></a></li>
+            <li class="nav"><a runat="server" href="~/Maps"><img runat="server" src="~/Content/Menu/maps.png" /></a></li>
+            <li class="nav"><a runat="server" href="~/Chat.aspx"><img runat="server" src="~/Content/Menu/chat.png" /></a></li>
+        </ul>
+        </div>   
+
+        <div class="main">    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div> 
+        <div class="center"><asp:Label ID="footer" runat="server" Font-Size="Small" ForeColor="White">Site Created by <a class="link" href="https://twitter.com/ElJefe323">jefe323</a></asp:Label><br /><br /></div>
+    </form>
+</body>
+</html>

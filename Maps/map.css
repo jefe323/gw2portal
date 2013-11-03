@@ -1,0 +1,32 @@
+﻿body {
+}
+
+.leaflet-container {
+    background: #000;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sector_text
+{
+    color: yellow;
+    font-family: 'Menomonia'; 
+    font-style: italic;
+    font-size: 16px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.sector_text_small
+{
+    color: #fff;
+    font-family: 'Menomonia'; 
+    font-style: italic;
+    font-size: 12px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
